@@ -1,6 +1,4 @@
-console.log("Madarchod");
-setInterval(function() {
-  console.log("Tera maka bhosra");
+setInterval(function() {  
   let closeBtn = document.querySelector('[aria-label^="Close"]');
   if (closeBtn) {
     closeBtn.click();
