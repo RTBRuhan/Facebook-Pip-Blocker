@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Facebook Pip Mode Closer",
+  "name": "Facebook Pip Blocker",
   "version": "1.0",
   "description": "Automatically clicks the 'close' button when Facebook enters Picture-in-Picture mode. By RTBRuhan",
   "icons": {
