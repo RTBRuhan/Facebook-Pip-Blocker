@@ -1,14 +1,27 @@
 {
   "manifest_version": 3,
   "name": "Facebook Pip Blocker",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Automatically clicks the 'close' button when Facebook enters Picture-in-Picture mode. By RTBRuhan",
   "icons": {
-    "16": "icon.png",
-    "32": "icon.png",
-    "48": "icon.png"
+    "16": "icon-off.png",
+    "32": "icon-off.png",
+    "48": "icon-off.png",
+    "128": "icon-off.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Facebook Pip Blocker: Disabled",
+    "default_icon": {
+      "16": "icon-off.png",
+      "32": "icon-off.png",
+      "48": "icon-off.png",
+      "128": "icon-off.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://www.facebook.com/*"],
